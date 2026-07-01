@@ -303,7 +303,7 @@ footer{padding:70px 0 30px;}
 @media(max-width:980px){
   .navlinks,.navright .theme-switch{display:none;}
   .hamburger{display:flex;}
-  .hero-inner{grid-template-columns:1fr;}
+  .hero-inner{grid-template-columns:1fr; gap:40px;}
   .grid6,.prog-wrap,.steps,.cert-wrap,.tgrid,.pgrid{grid-template-columns:1fr;}
   .statband .wrap{grid-template-columns:repeat(2,1fr);}
   .chatbox{grid-template-columns:1fr;}
@@ -313,6 +313,80 @@ footer{padding:70px 0 30px;}
   .fgrid{grid-template-columns:1fr 1fr;}
   .tabpanel.active{grid-template-columns:1fr;}
 }
+
+/* ---- phones ---- */
+@media(max-width:640px){
+  .wrap{padding:0 18px;}
+  .section{padding:60px 0;}
+  .section-head{margin-bottom:32px;}
+  .section-head p{font-size:.96rem;}
+  nav{padding:14px 16px; gap:10px;}
+  .logo{font-size:1rem; gap:8px;}
+  .logo-mark{width:30px; height:30px; font-size:.72rem;}
+  .navright{gap:10px;}
+  .navright .btn-primary{padding:10px 16px !important; font-size:.8rem;}
+  .drawer{width:82vw; max-width:320px; padding:80px 22px;}
+
+  #hero{padding:104px 0 46px;}
+  .eyebrow{font-size:.7rem; line-height:1.5;}
+  .hero-copy h1{font-size:clamp(1.7rem,7vw,2.2rem); margin:14px 0 16px;}
+  .hero-copy p{font-size:.98rem; margin-bottom:26px;}
+  .hero-ctas{gap:10px; margin-bottom:32px;}
+  .hero-ctas .btn{flex:1 1 auto; justify-content:center; padding:13px 18px;}
+  .hero-stats{gap:10px;}
+  .hstat{flex:1 1 calc(50% - 10px); min-width:0; padding:14px 16px;}
+  .hstat b{font-size:1.25rem;}
+  .hstat span{font-size:.72rem;}
+  .floaty{display:none;}
+  .hero-card{padding:18px;}
+
+  .marquee-track{gap:26px; font-size:.78rem;}
+
+  .statband{padding:40px 0;}
+  .statband .wrap{gap:14px;}
+  .statband b{font-size:1.6rem;}
+  .statband span{font-size:.76rem;}
+
+  .grid6,.prog-wrap,.steps,.cert-wrap,.tgrid,.pgrid{gap:14px;}
+  .card,.step,.prog,.tcard,.pcard,.cert-card,.cert-preview,.safe-card{padding:20px;}
+
+  .tabbar{gap:8px;}
+  .tabbtn{padding:9px 16px; font-size:.8rem;}
+
+  .chatbox{border-radius:16px;}
+  .chat-side{padding:18px;}
+  .chat-main{height:420px;}
+  .chat-log{padding:16px;}
+  .chat-actions{flex-wrap:wrap;}
+  .chat-actions .btn{flex:1 1 45%;}
+
+  .safety-wrap{gap:24px;}
+  .contact-wrap{gap:24px;}
+  .form{padding:20px; gap:14px;}
+
+  .ctaband{padding:52px 0;}
+  .ctaband .btnrow{flex-direction:column;}
+  .ctaband .btnrow .btn{width:100%; justify-content:center;}
+
+  footer{padding:50px 0 24px;}
+  .fgrid{grid-template-columns:1fr; gap:28px; margin-bottom:34px;}
+  .fbrand p{max-width:none;}
+  .fbottom{flex-direction:column; align-items:flex-start; gap:10px;}
+
+  #waFab{width:52px; height:52px; font-size:1.4rem; bottom:18px; right:18px;}
+  #toTop{width:40px; height:40px; bottom:80px; right:18px; font-size:1rem;}
+
+  .modal{padding:22px;}
+}
+
+/* ---- small phones ---- */
+@media(max-width:400px){
+  .hero-copy h1{font-size:1.55rem;}
+  .hstat{flex:1 1 100%;}
+  .navright .btn-primary{display:none;}
+  .logo{font-size:.94rem;}
+}
+
 </style>
 </head>
 <body data-theme="mint">
